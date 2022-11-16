@@ -15,7 +15,7 @@ class WaterView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final waveColor = Theme.of(context).accentColor.withOpacity(0.5);
+    final waveColor = Theme.of(context).colorScheme.secondary.withOpacity(0.5);
 
     return AnimatedBuilder(
       animation: animation,

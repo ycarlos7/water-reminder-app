@@ -18,7 +18,7 @@ class RemainingHydrationText extends StatelessWidget {
           child: child,
         );
       },
-      child: Text("Remaining ${quantity.asMilliliters()}"),
+      child: Text("Restante ${quantity.asMilliliters()}"),
     );
   }
 }

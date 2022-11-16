@@ -20,7 +20,7 @@ class SettingsPage extends StatelessWidget {
             children: [
               SizedBox(width: double.infinity),
               Text(
-                "Settings",
+                "Configurações",
                 style: theme.textTheme.headline4,
               ),
               SizedBox(height: 32),
@@ -29,7 +29,7 @@ class SettingsPage extends StatelessWidget {
                 child: Row(
                   children: [
                     Expanded(
-                      child: Text("Reminders"),
+                      child: Text("Lembretes"),
                     ),
                     RollingSwitchButton(
                       value: bloc.state.alarmEnabled,
@@ -52,7 +52,7 @@ class SettingsPage extends StatelessWidget {
                     children: [
                       Expanded(
                         child: Text(
-                          "Daily consumption",
+                          "Consumo diário",
                           style: theme.textTheme.bodyText2,
                         ),
                       ),
@@ -101,7 +101,7 @@ class SettingsPage extends StatelessWidget {
       context,
       title: "Hard Reset",
       content:
-          "You are about to reset all the application data. This action cannot be undone.",
+          "Está prestes a reinicializar todos os dados da aplicação. Esta ação não pode ser desfeita.",
     );
     if (confirmed) {
       context.read<WaterBloc>().clearDataStore();

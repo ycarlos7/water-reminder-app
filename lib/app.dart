@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 import 'package:waterreminder/bloc/water_bloc.dart';
 import 'package:waterreminder/domain/repository/water_repository.dart';
 import 'package:waterreminder/ui/home/home_page.dart';
@@ -44,7 +43,7 @@ class _AppState extends State<App> {
           value: SystemUiOverlayStyle(
             statusBarColor: Colors.transparent,
             systemNavigationBarColor: Colors.transparent,
-            systemNavigationBarIconBrightness: Brightness.dark,
+            systemNavigationBarIconBrightness: Brightness.light,
             statusBarIconBrightness: Brightness.dark,
           ),
           child: HomePage(),
